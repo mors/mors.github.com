@@ -21,7 +21,7 @@ $ ufw allow 1723/tcp
 ```
 $ nano /etc/pptpd.conf
 
-# 可以跟改為自己喜歡的配置。
+#可以跟改為自己喜歡的配置。
 localip 192.168.0.1
 remoteip 192.168.0.234-238,192.168.0.245
 ```
@@ -31,7 +31,7 @@ remoteip 192.168.0.234-238,192.168.0.245
 ```
 $ nano /etc/ppp/pptpd-options
 
-# 我是將 DNS 指向給 GOOGLG，當然也可以改為自己習慣的配置。
+#我是將 DNS 指向給 GOOGLG，當然也可以改為自己習慣的配置。
 ms-dns 8.8.8.8
 ms-dns 8.8.4.4
 ```
@@ -41,7 +41,7 @@ ms-dns 8.8.4.4
 ```
 $ nano /etc/ppp/chap-secrets
 
-# 依序分別為帳號、伺服器、密碼、IP。
+#依序分別為帳號、伺服器、密碼、IP。
 username	pptpd   password    *
 ```
 
@@ -56,11 +56,11 @@ $ service pptpd restart
 ```
 $ nano /etc/sysctl.conf
 
-# 修改
+#修改
 net.ipv4.ip_forward=1
 net.ipv6.conf.all.forwarding=1
 
-# 存檔案後執行
+#存檔案後執行
 $ sysctl -p
 ```
 
@@ -69,7 +69,7 @@ $ sysctl -p
 ```
 $ nano /etc/default/ufw
 
-# 修改
+#修改
 DEFAULT_FORWARD_POLICY="ACCEPT"
 ```
 
@@ -78,7 +78,7 @@ DEFAULT_FORWARD_POLICY="ACCEPT"
 ```
 $ nano /etc/ufw/before.rules
 
-# 新增
+#新增
 
 # NAT table rules
 *nat
