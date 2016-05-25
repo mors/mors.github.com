@@ -1,13 +1,10 @@
 # Permalinks
-#
-# Use of `relative_permalinks` ensures post links from the index work properly.
 permalink:           pretty
-relative_permalinks: true
 
 # Setup
 title:               EditWall
 tagline:             Random Yesterdays for Tomorrow
-url:                 http://mors.github.io
+url:                 http://mors.github.com
 paginate:            1
 baseurl:             ""
 
@@ -28,3 +25,8 @@ author:
 version:             2.0.0
 github:
   repo:              https://github.com/poole/poole
+
+# Gems
+gems:
+  - jekyll-paginate
+  - jekyll-gist
