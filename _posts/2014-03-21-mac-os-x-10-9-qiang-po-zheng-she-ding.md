@@ -7,20 +7,20 @@ title: Mac OS X 10.9 強迫症設定
 我個人有非常多的強迫症地方，比方現在要說的 Dock 設定大小 Dock 圖示正常時的大小設定為 32px。
 
 ```
-$ defaults write com.apple.dock tilesize -float 32
+$ defaults write com.apple.dock tilesize -float 48
 ```
 
 滑鼠滑入後放大的大小要是 48px。
 
 ```
-$ defaults write com.apple.dock largesize -float 48
+$ defaults write com.apple.dock largesize -float 68
 ```
 
 Launchpad 應用程式排列方式
 
 ```
-$ defaults write com.apple.dock springboard-columns -int 8
-$ defaults write com.apple.dock springboard-rows -int 6
+$ defaults write com.apple.dock springboard-columns -int 10
+$ defaults write com.apple.dock springboard-rows -int 8
 ```
 
 重新啟動 Launchpad
